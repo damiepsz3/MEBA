@@ -27,3 +27,12 @@ $(document).ready(function () {
         $(this).strech_text();
     });
 });
+
+function showMail() {
+    $("#mail").show();
+}
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
