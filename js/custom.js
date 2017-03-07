@@ -33,9 +33,9 @@ $(document).ready(function () {
 });
 
 function showMail() {
-    $(".mail").show();
+    $(".mail").css('visibility', 'visible');
     $(".mail").strech_text();
-    
+
 
 }
 
