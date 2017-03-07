@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
@@ -7,40 +7,45 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/strech.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
 	<div class="container">
-		<div class="col-md-12 text-center text-uppercase titulo">
-			<h2>MEBA</h2>
-			<h2>ARQS</h2>
+		<div class="row">
+			<div class="col-md-12 text-center text-uppercase titulo">
+				<h2>MEBA</h2>
+			</div>
+			<div class="col-md-12 text-center text-uppercase titulo">
+				<h2>ARQS</h2>
+			</div>	
 		</div>
-
-		<div class="col-md-12 text-center descripcionbox">
-			<h3 class="descripcion proy">proyecto</h3>
-			<h3 class="descripcion dir">dirección&nbsp;de&nbsp;obra</h3>
-			<h3 class="descripcion dis">diseño</h3>
-			<h3 class="descripcion lab">laboratorio</h3>
+		<div class="row">
+			<div class="col-md-12 text-center descripcionbox">
+				<h3 class="descripcion proy">proyecto</h3>
+				<h3 class="descripcion dir">dirección&nbsp;de&nbsp;obra</h3>
+				<h3 class="descripcion dis">diseño</h3>
+				<h3 class="descripcion lab">laboratorio</h3>
+			</div>
 		</div>
-
 		<div class="row" >
 			<div class="imagenes col-xs-3 col-md-3">
-				<img src="assets/correo-02.png" class="img-responsive img-circle " onclick="showMail();">
+				<img src="assets/correo-02.png" class="img-responsive img-circle" onclick="showMail();" alt="E-mail">
 			</div>
 			<div class="imagenes col-xs-3 col-md-3">
-				<img src="assets/face-02.png" class="img-responsive img-circle " onclick="openInNewTab('https://www.facebook.com/meba.arqs/');">
+				<img src="assets/face-02.png" class="img-responsive img-circle" onclick="openInNewTab('https://www.facebook.com/meba.arqs/');" alt="Facebook">
 			</div>
 			<div class="imagenes col-xs-3 col-md-3">
-				<img src="assets/pinterest_02.png" class="img-responsive img-circle " onclick="openInNewTab('www.test.com');"">
+				<img src="assets/pinterest_02.png" class="img-responsive img-circle" onclick="openInNewTab('www.test.com');" alt="Pinterest">
 			</div>
 			<div class="imagenes col-xs-3 col-md-3">
-				<img src="assets/instagram-02.png" class="img-responsive img-circle  " onclick="openInNewTab('https://www.instagram.com/meba.arqs/');">
+				<img src="assets/instagram-02.png" class="img-responsive img-circle " onclick="openInNewTab('https://www.instagram.com/meba.arqs/');" alt="Instagram">
 			</div>
 		</div>
-
-		<div class="col-md-12 text-center mailbox">
+		<div class="row">
+			<div class="col-md-12 text-center mailbox">
 				<h3 class="mail" hidden>meba.arqs@gmail.com</h3>
-		</div>
+			</div>
+		</div>	
 
 	</div>
 </body>
