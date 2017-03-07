@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'gulim';
+  src: url('../fonts/com_gulim.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/com_gulim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/com_gulim.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/com_gulim.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'simhei';
+  src: url('../fonts/com_simhei.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/com_simhei.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/com_simhei.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 body {
 	background-color: black;
 	color: white;
@@ -17,13 +31,16 @@ h2 {
 h3{
 	margin: 0;
 	margin-bottom:2%;
-	font-size: 23px;
 }
 
+img {
+	margin: 2%;
+	max-width: 20%;
+}
 
 .container {
 	max-width: 340px;
-	font-family: gulim;
+	font-family: 'gulim';
 	margin: auto;
   	position: absolute;
   	top: 10%; left: 0; bottom: 0; right: 0;
@@ -40,7 +57,9 @@ h3{
 }
 
 .imagenes {
-	font-size: 0;
+	height: auto;
+	max-width: 100%;
+	display: block;
 }
 
 .proy {
@@ -49,7 +68,6 @@ h3{
 
 .dir {
 	font-size: 27px;
-	display: block;
 }
 
 .dis {
@@ -66,11 +84,11 @@ h3{
 	margin-top: 5%;
 }
 
-img {
-	margin: 2%;
-	max-width: 20%;
+.mail {
+	max-width: 340px;
+	font-size: 22px;
 }
 
-#mail {
-	font-size: 28.5px;
+.mailbox {
+	padding: 0;
 }

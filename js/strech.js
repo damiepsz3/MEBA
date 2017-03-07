@@ -6,14 +6,14 @@ $.fn.strech_text = function(){
         nb_char       = elmt.text().length,
         spacing       = cont_width/nb_char,
         txt_width;
-    
+
     elmt.html(one_line);
     txt_width = one_line.width();
-    
+
     if (txt_width < cont_width){
         var  char_width     = txt_width/nb_char,
-             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ; 
-  
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ;
+
         one_line.css({'letter-spacing': ltr_spacing});
     } else {
         one_line.contents().unwrap();
@@ -23,13 +23,17 @@ $.fn.strech_text = function(){
 
 
 $(document).ready(function () {
+  $(window).load(function() {
     $('.descripcion').each(function(){
         $(this).strech_text();
-    });
+    })
+   });
 });
 
 function showMail() {
-    $("#mail").show();
+    $(".mail").show();
+    $(".mail").strech_text();
+
 }
 
 function openInNewTab(url) {
