@@ -23,13 +23,11 @@ $.fn.strech_text = function(){
 
 
 $(document).ready(function () {
-  $.when($(window).load(function() {
-    $('.descripcion').each(function(){
-        $(this).strech_text();
+    $(window).load(function() {
+        $('.descripcion').each(function(){
+            $(this).strech_text();
+        })
     })
-})).done(function() {
-   $('.descripcionbox').css('visibility', 'visible');
-});
 });
 
 function showMail() {
