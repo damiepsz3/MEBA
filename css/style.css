@@ -47,13 +47,6 @@ html, body {
   -webkit-justify-content : center;
           justify-content : center;
 }
-@font-face {
-	font-family: 'gulim';
-	src: url('../fonts/com_gulim.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/com_gulim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../fonts/com_gulim.woff') format('woff'), /* Pretty Modern Browsers */
-	url('../fonts/com_gulim.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
 
 @font-face {
 	font-family: 'simhei';
@@ -71,8 +64,10 @@ h2 {
 	font-size: 98px;
 }
 h3{
-	margin: 0;
-	margin-bottom:2%;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 0;
+	margin-top: 2%	;
 }
 
 img {
@@ -80,9 +75,17 @@ img {
 	max-width: 20%;
 }
 
+a {
+	visibility: hidden;
+}
+
+span {
+	margin: 0;
+}
+
 .container {
 	max-width: 340px;
-	font-family: 'gulim';
+	font-family: 'Raleway';
 }
 
 .titulo {
@@ -90,8 +93,8 @@ img {
 }
 
 .descripcionbox {
-	margin-bottom: 20%;
-	margin-top: 20%;
+	margin-bottom: 18%;
+	margin-top: 18%;
 	padding: 0;
 }
 
@@ -110,7 +113,7 @@ img {
 }
 
 .dis {
-	font-size: 25px;
+	font-size: 32px;
 }
 
 .lab {
@@ -131,4 +134,5 @@ img {
 .mailbox {
 	padding: 0;
 	visibility: hidden;
+	font-family: 'Raleway';
 }
